@@ -45,6 +45,9 @@
 
 header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 /* header(roof) */
@@ -57,6 +60,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   box-shadow: var(--dark-shadow);
+  opacity: 0.9;
 }
 .roof-container {
   width: 60%;
@@ -107,16 +111,17 @@ main {
   width: 100vw;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .navbar {
   width: 100%;
   max-width: 1280px;
   height: 150px;
-  border-bottom: 1px solid black;
   display: flex;
   padding: 10px;
-  margin: 10px;
+
+  margin-bottom: 0;
   z-index: 500;
 }
 
@@ -135,6 +140,7 @@ main {
   justify-content: space-evenly;
   align-items: flex-end;
   padding-bottom: 6px;
+     z-index: 100;
 }
 .navbar .menu > li > a {
   font-size: 22px;
@@ -142,11 +148,15 @@ main {
   color: hsl(205, 39%, 36%);
   border-radius: 5px;
   transition: var(--primary-transition-2);
+    z-index: 100;
+ 
+
 }
 
 .navbar .menu li > a > i {
   font-size: 15px;
   padding-left: 2px;
+    z-index: 100;
 }
 
 .navbar .menu > li {
@@ -256,7 +266,6 @@ left: 10px;
 
 /* section--slider */
 section.slider {
-
   height: 640px;
   display: flex;
   justify-content: center;
@@ -270,6 +279,28 @@ section.slider {
   height: 640px;
   position: relative;
 }
+.slider-container > a {
+  position: fixed;
+  width: 250px;
+  height: 50px;
+  background-color: var(--primary-lacivert);
+  z-index: 400;
+  top: 225px;
+  right: 0px;
+  color: white;
+  border-radius: 10px 0 0 10px;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 17px;
+  box-shadow: var(--dark-shadow);
+  transition: var(--primary-transition);
+  opacity: 0.8;
+}
+
+.slider-container > a:hover {
+  box-shadow: 5px 4px 14px 6px white;
+}
 
 .slider-container > article {
   position: absolute;
@@ -278,12 +309,11 @@ section.slider {
   top: 0;
   left: 0;
   z-index: 120;
-  transition: opacity 1.2s ease;
+  transition: opacity 1.2s ease-in-out;
   opacity: 0;
- 
 }
 .slider-container > article.active {
- opacity: 1;
+  opacity: 1;
 }
 .slider-container > article > img {
   width: 100%;
@@ -291,54 +321,57 @@ section.slider {
   object-fit: cover;
 }
 .slider-container > article > .img-desc {
-
-position: absolute;
-top: 300px;
-right: 80px;
-text-align: left;
+  position: absolute;
+  top: 300px;
+  right: 80px;
+  text-align: left;
+  animation: kartal 8s linear infinite;
+  animation-direction: alternate;
+  background-color: rgb(114, 86, 86);
+  opacity: 0.5;
+  padding: 5px 10px;
 }
 
-.slider-container > article > .img-desc> p {
-color: #fff;
-font-size: 60px;
-animation: kartal 1.5s ease;
+.slider-container > article > .img-desc > p {
+  color: #fff;
+  font-size: 60px;
+  opacity: 1;
+  letter-spacing: 1px;
 }
+/* .anima{
+  animation: kartal 1.5s ease;
+} */
 
 /* resim yazı animasyonu */
-@keyframes kartal{
-0%{opacity: 0;
-transform: translatex(100%);}
-100%{opacity: 1;
-transform: translateX(0)}
-
+@keyframes kartal {
+  0% {
+    transform: translateY(20%);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-.slider-container .btns-hover{
-position: absolute;
-bottom: 10px;
-left: 47%;
-z-index: 200;
-
+.slider-container .btns-hover {
+  position: absolute;
+  bottom: 10px;
+  left: 47%;
+  z-index: 200;
 }
-.slider-container .btns-hover button{
-
-width: 20px;
-height: 20px;
-border-radius: 50%;
-margin: 0 3px;
-background-color:rgb(189, 187, 187);
-cursor: pointer;
- transition: background-color 1.2s ease;
-
+.slider-container .btns-hover button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 3px;
+  background-color: rgb(189, 187, 187);
+  cursor: pointer;
+  transition: background-color 1.2s ease;
 }
-.slider-container .btns-hover button.active{
-
-background-color:rgb(100, 99, 99);
-
+.slider-container .btns-hover button.active {
+  background-color: rgb(100, 99, 99);
 }
-
-
-
-
-
-
-

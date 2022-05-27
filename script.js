@@ -2,8 +2,16 @@
 
 const article = document.querySelectorAll(".slider-container article");
 const button = document.querySelectorAll(".slider-container button");
+const ppAnima=document.querySelectorAll(".img-desc")
 
 let currentSlide = 0;
+
+
+/* const kartal=(article)=>{
+  article.classList.contains("active ")
+    ? ppAnima.classList.add("anima")
+    : ppAnima.classList.remove("anima"); 
+} */
 
 setInterval(nextImage, 5000);
 
@@ -15,6 +23,8 @@ function nextImage() {
 
   article[currentSlide].classList.add("active");
   button[currentSlide].classList.add("active");
+
+
 }
 
 
