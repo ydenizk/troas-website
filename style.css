@@ -140,7 +140,7 @@ main {
   justify-content: space-evenly;
   align-items: flex-end;
   padding-bottom: 6px;
-     z-index: 100;
+  z-index: 100;
 }
 .navbar .menu > li > a {
   font-size: 22px;
@@ -148,15 +148,13 @@ main {
   color: hsl(205, 39%, 36%);
   border-radius: 5px;
   transition: var(--primary-transition-2);
-    z-index: 100;
- 
-
+  z-index: 100;
 }
 
 .navbar .menu li > a > i {
   font-size: 15px;
   padding-left: 2px;
-    z-index: 100;
+  z-index: 100;
 }
 
 .navbar .menu > li {
@@ -170,28 +168,6 @@ main {
   color: #fff;
 }
 
-/* nav elemanları alt çizgi */
-/* .navbar .menu li::after{
-    content: "";
-position: absolute;
-width: 0%;
-height: 2px;
-background-color: rgb(164, 149, 11);
-bottom: -10px;
-left: 10px;
-transition: width .3s ease-in-out;
-
-}
-.navbar .menu > li:hover:after{
-    content: "";
-position: absolute;
-width: 82%;
-height: 2px;
-background-color: rgb(146, 132, 4);
-bottom: -10px;
-left: 10px;
-}
- */
 .drop-menu {
   position: absolute;
   top: 35px;
@@ -374,4 +350,121 @@ section.slider {
 }
 .slider-container .btns-hover button.active {
   background-color: rgb(100, 99, 99);
+}
+
+/* section bilgi */
+
+section.bilgi {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.bilgi-container {
+  width: 1280px;
+  max-width: 1280px;
+  height: 620px;
+
+  text-align: center;
+  padding: 10px 10px;
+
+  padding-left: 5px;
+}
+.bilgi-container > .bilgi-title {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: rgb(5, 69, 126);
+  font-size: 25px;
+  animation: title 1.5s ease-in-out forwards;
+  
+}
+@keyframes title {
+0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+  
+}
+
+.bilgi-container > p {
+  color: rgb(39, 39, 39);
+  font-size: 16px;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0;
+  font-weight: lighter;
+  line-height: 1.4;
+}
+.bilgi-container > p > span {
+  color: rgb(39, 39, 39);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(5, 69, 126);
+}
+
+.bilgi-container .bilgi-pics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+.bilgi-container > .bilgi-pics > .bilgi-foto {
+  width: 600px;
+  height: 320px;
+  background-color: #222;
+  border-radius: 5px;
+  position: relative;
+}
+.bilgi-container > .bilgi-pics > .bilgi-foto::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: rgb(211, 178, 112);
+  z-index: 10;
+  top: -65px;
+  right: -60px;
+  opacity: 0.5;
+}
+.bilgi-container > .bilgi-pics > .bilgi-foto > img {
+  width: 600px;
+  height: 320px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.car-line {
+  color: rgb(211, 178, 112);
+  animation: arrow 2s ease-in-out infinite alternate;
+  white-space: nowrap;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+  0% {
+    transform: translateX(-25%);
+  }
+}
+
+.bilgi-svg {
+  width: 320px;
+  height: 320px;
+  background-image: url(./imgs/buildings.svg);
+  background-repeat: no-repeat;
+  background-size: 320px 320px;
 }

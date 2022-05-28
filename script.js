@@ -13,7 +13,7 @@ let currentSlide = 0;
     : ppAnima.classList.remove("anima"); 
 } */
 
-setInterval(nextImage, 5000);
+/* setInterval(nextImage, 5000);
 
 function nextImage() {
    article[currentSlide].classList.remove("active");
@@ -25,13 +25,13 @@ function nextImage() {
   button[currentSlide].classList.add("active");
 
 
-}
+} */
 
 
 
 
 
-
+/* 
 const newNav = function (n) {
   article.forEach((sect) => {
     sect.classList.remove("active");
@@ -50,6 +50,8 @@ button.forEach((btn, i) => {
     currentSlide = i;
   });
 });
+ */
+
 
 
 
