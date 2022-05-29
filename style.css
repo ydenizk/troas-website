@@ -837,8 +837,8 @@ section.hakk {
   background-color: var(--primary-lacivert);
 }
 
-.alt-ul > li.alt-hov-2>a,
-.alt-ul > li .alt-active>a> i {
+.alt-ul > li.alt-hov-3>a,
+.alt-ul > li .alt-hov-3>a> i {
   color: rgb(146, 123, 78);
 }
 
@@ -920,4 +920,46 @@ height: 400px;
 object-fit: cover;
 border-radius: 5px;
 }
+
+/* section YÖNETMELİKLER*/
+.yonet-details {
+  padding: 10px;
+  text-align: left;
+}
+.yonet-details >h2{
+  margin-bottom: 5px;
+  margin-top: 50px;
+  color: var(--primary-lacivert);
+}
+.yonet-details >.yonet-first{
+
+  margin-top: 10px;
+
+}
+.yonet-details a{
+text-decoration: underline;
+color: var(--primary-blue);
+
+}
+.yonet-details h5{
+text-decoration: underline;
+color: var(--primary-blue);
+margin-top: 10px;
+margin-bottom: 5px;
+text-align: center;
+
+}
+.yonet-details p{
+
+color: hsl(209, 34%, 30%);
+  text-align: left;
+ margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.3;
+ 
+
+}
+
+
+
 
