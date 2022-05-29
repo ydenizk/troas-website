@@ -3,8 +3,17 @@
 const article = document.querySelectorAll(".slider-container article");
 const button = document.querySelectorAll(".slider-container button");
 const ppAnima=document.querySelectorAll(".img-desc")
+const roof=document.querySelectorAll("main")
+const footerrBtn=document.querySelector(".footer-btn")
+
+footerrBtn.click("click",()=>{
+  roof.scrollIntoView()
+
+})
+
 
 let currentSlide = 0;
+
 
 
 /* const kartal=(article)=>{
