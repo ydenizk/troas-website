@@ -1,6 +1,6 @@
 //console.log(window.innerWidth)
 
-const article = document.querySelectorAll(".slider-container article");
+/* const article = document.querySelectorAll(".slider-container article");
 const button = document.querySelectorAll(".slider-container button");
 const ppAnima=document.querySelectorAll(".img-desc")
 const roof=document.querySelectorAll("main")
@@ -10,19 +10,17 @@ footerrBtn.click("click",()=>{
   roof.scrollIntoView()
 
 })
+ */
+
+/* let currentSlide = 0;
 
 
-let currentSlide = 0;
-
-
-
-/* const kartal=(article)=>{
+ const kartal=(article)=>{
   article.classList.contains("active ")
     ? ppAnima.classList.add("anima")
     : ppAnima.classList.remove("anima"); 
-} */
-
-/* setInterval(nextImage, 5000);
+} 
+ setInterval(nextImage, 5000);
 
 function nextImage() {
    article[currentSlide].classList.remove("active");
@@ -34,13 +32,9 @@ function nextImage() {
   button[currentSlide].classList.add("active");
 
 
-} */
+}
 
 
-
-
-
-/* 
 const newNav = function (n) {
   article.forEach((sect) => {
     sect.classList.remove("active");
