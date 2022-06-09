@@ -1,6 +1,6 @@
-//console.log(window.innerWidth)
+/* //console.log(window.innerWidth)
 
-/* const article = document.querySelectorAll(".slider-container article");
+ const article = document.querySelectorAll(".slider-container article");
 const button = document.querySelectorAll(".slider-container button");
 const ppAnima=document.querySelectorAll(".img-desc")
 const roof=document.querySelectorAll("main")
@@ -10,9 +10,9 @@ footerrBtn.click("click",()=>{
   roof.scrollIntoView()
 
 })
- */
 
-/* let currentSlide = 0;
+
+let currentSlide = 0;
 
 
  const kartal=(article)=>{
@@ -53,8 +53,22 @@ button.forEach((btn, i) => {
     currentSlide = i;
   });
 });
+
+
+//viewport a gelince yazı animasyonu
+ const element = document.querySelector(".bilgi-title");
+const observer = new IntersectionObserver((entries) => {
+  element.classList.toggle("bilgi-title-anima", entries[0].isIntersecting);
+});
+
+observer.observe(element);
+
+
+
+
+
+
+
  */
 
-
-
-
+console.log(window.innerWidth)
