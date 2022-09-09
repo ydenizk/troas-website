@@ -27,8 +27,13 @@
 
           <div class="social-signs">
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
-         <a href="https://www.instagram.com/troasmuhendislik/?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/troasmuhendislik/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a
+              href="https://www.instagram.com/troasmuhendislik/?igshid=YmMyMTA2M2Y="
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/troasmuhendislik/"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -37,7 +42,7 @@
     <!-- nav -->
     <main>
       <nav class="navbar">
-        <div class="logo"></div>
+        <a href="index.html"><div class="logo"></div></a>
 
         <ul class="menu">
           <li><a href="index.html">Anasayfa</a></li>
@@ -49,7 +54,7 @@
               <li><a href="Ekibimiz.html">Ekibimiz</a></li>
               <li><a href="Yönetmelikler.html">Yönetmelikler</a></li>
             </ul>
-          </li> 
+          </li>
 
           <li>
             <a href="#">Hizmetlerimiz<i class="fa-solid fa-caret-down"></i></a>
@@ -67,30 +72,103 @@
     </main>
     <!-- nav END -->
     <!-- section iltişim -->
-    <section class="ilet">
-<div class="container">
-  <h1>FormSubmit Demo</h1>
-  <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
-    <div class="form-group">
-      <div class="form-row">
-        <div class="col">
-          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+    <section class="iletisim">
+      <div class="ilet-container">
+        <div class="form-container">
+          <h1 class="ilet-title">İLETİŞİM-servis talep formu</h1>
+          <form action="https://formsubmit.co/ydkurt@yahoo.com" method="POST">
+            <input type="hidden" name="_subject" value="Yeni Mesaj!" />
+            <!--  <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+            <input type="hidden" name="_captcha" value="false" />
+            <div class="input-container">
+              <label for="name">Adınız </label>
+              <input
+                required
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Adınız"
+                required
+              />
+            </div>
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input
+                required
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Adresiniz"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="message">Mesajınız</label>
+              <textarea
+                required
+                id="message"
+                type="text"
+                name="message"
+                placeholder="Mesajınız"
+                rows="10"
+                cols="20"
+              ></textarea>
+            </div>
+            <div class="input-container">
+              <button type="submit">Gönder</button>
+            </div>
+          </form>
         </div>
-        <div class="col">
-          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="525"
+              height="461"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=troas%20m%C3%BChendis&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://fmovies-online.net">fmovies</a><br /><style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 461px;
+                width: 525px;
+              }</style
+            ><a href="https://www.embedgooglemap.net"
+              >embed google maps on website</a
+            ><style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 461px;
+                width: 525px;
+                border-radius: 5px;
+                opacity: .8;
+              }
+            </style>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="form-group">
-      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-  </form>
-</div>
-
     </section>
-  
 
+    <section class="ilet-2">
+      <div class="ilet-con">
+        <h3>İLETİŞİM</h3>
+        <div class="ilet-details">
+          <p class="ilet-tit">TROAS MÜHENDİSLİK ASANSÖR İnş. Elk.</p>
+          <p class="ilet-tit">San. ve Tic. Ltd. Şti.</p>
+          <p>İsmet paşa Mah. Miralay Şefik Bey Cad.</p>
+          <p>No:39/1 ÇANAKKALE</p>
+          <p class="ile-p">Telefon: <a href="#">0 (286) 212 44 44</a></p>
+          <p class="ile-p">Email : <a href="#">info@troasmuhendislik.com</a></p>
+        </div>
+      </div>
+    </section>
     <!-- section-(half footer) -->
     <section class="half-footer">
       <a href="#" class="footer-btn"><i class="fa-solid fa-arrow-up"></i></a>
@@ -108,15 +186,19 @@
       </div>
 
       <div class="half-footer-details">
-       <div class="half-details-1">
+        <div class="half-details-1">
           <h3>HAKKIMIZDA</h3>
 
           <div class="about">
             <p>
-          Faaliyet gösterdiği her alanda vermiş olduğu taahhütleri eksiksiz yerine getiren, asansör ve işçilik kalite standardını daima yüksek tutan, 
-          teknolojiyi yakından takip eden ve teknolojik gelişmelerde katkı sağlan Troas Mühendislik, müşterilerine...
+              Faaliyet gösterdiği her alanda vermiş olduğu taahhütleri eksiksiz
+              yerine getiren, asansör ve işçilik kalite standardını daima yüksek
+              tutan, teknolojiyi yakından takip eden ve teknolojik gelişmelerde
+              katkı sağlan Troas Mühendislik, müşterilerine...
             </p>
-            <a href="Hakkımızda.html"><i class="fa-solid fa-arrow-right"></i>Daha Fazlası</a>
+            <a href="Hakkımızda.html"
+              ><i class="fa-solid fa-arrow-right"></i>Daha Fazlası</a
+            >
           </div>
         </div>
 
@@ -149,11 +231,11 @@
     <!-- footer -->
     <footer>
       <div class="foot">
-     <a href="index.html">Anasayfa</a>
-            <a href="Hakkımızda.html">Kurumsal</a>
-            <a href="montaj.html">Hizmetlerimiz</a>
-            <a href="Referanslar.html">Referanslar</a>
-            <a href="#" class="bord">İletişim</a>
+        <a href="index.html">Anasayfa</a>
+        <a href="Hakkımızda.html">Kurumsal</a>
+        <a href="montaj.html">Hizmetlerimiz</a>
+        <a href="Referanslar.html">Referanslar</a>
+        <a href="#" class="bord">İletişim</a>
       </div>
     </footer>
 

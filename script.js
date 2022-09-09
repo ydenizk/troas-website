@@ -1,4 +1,3 @@
-/* //console.log(window.innerWidth)
 
  const article = document.querySelectorAll(".slider-container article");
 const button = document.querySelectorAll(".slider-container button");
@@ -12,7 +11,7 @@ footerrBtn.click("click",()=>{
 })
 
 
-let currentSlide = 0;
+/* /* let currentSlide = 0;
 
 
  const kartal=(article)=>{
@@ -32,10 +31,9 @@ function nextImage() {
   button[currentSlide].classList.add("active");
 
 
-}
+} 
 
-
-const newNav = function (n) {
+/* const newNav = function (n) {
   article.forEach((sect) => {
     sect.classList.remove("active");
   });
@@ -53,7 +51,7 @@ button.forEach((btn, i) => {
     currentSlide = i;
   });
 });
-
+ */
 
 //viewport a gelince yazı animasyonu
  const element = document.querySelector(".bilgi-title");
@@ -69,6 +67,5 @@ observer.observe(element);
 
 
 
- */
 
-console.log(window.innerWidth)
+
