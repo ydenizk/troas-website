@@ -11,7 +11,7 @@ footerrBtn.click("click",()=>{
 })
 
 
-/* /* let currentSlide = 0;
+ let currentSlide = 0;
 
 
  const kartal=(article)=>{
@@ -33,7 +33,7 @@ function nextImage() {
 
 } 
 
-/* const newNav = function (n) {
+ const newNav = function (n) {
   article.forEach((sect) => {
     sect.classList.remove("active");
   });
@@ -51,7 +51,7 @@ button.forEach((btn, i) => {
     currentSlide = i;
   });
 });
- */
+ 
 
 //viewport a gelince yazı animasyonu
  const element = document.querySelector(".bilgi-title");
