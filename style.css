@@ -1542,7 +1542,104 @@ section.ilet-2 > .ilet-con > h3 {
     font-weight: 500;
     padding: 5px 2px;
   }
+  .lift-container > .lift-article-3 {
+    display: none;
+  }
+  .components-container {
+    width: 1280px;
+    max-width: 1250px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+section.hakk {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid var(--primary-lacivert);
 }
+
+
+.hakk-container {
+ 
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+}
+@media (max-width: 500px) {
+  .input-container > label {
+ padding-left: 30px;
+}
+  .input-container > input,
+.input-container > textarea {
+ padding-left: 30px;
+}
+  .navbar .menu > li > a {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 0;
+  }
+  .slider-container > .tek-link {
+    font-size: 14px;
+    right: 25px;
+  }
+  .slider-container > article > .img-desc {
+    right: 50px;
+    text-align: right;
+  }
+
+  .slider-container > article > .img-desc > p {
+    font-size: 40px;
+
+    letter-spacing: 0.6px;
+  }
+  .lift-container > .lift-article-3 {
+    display: none;
+  }
+  .components-container {
+    width: 1280px;
+    max-width: 1250px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .roof {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .roof-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (max-width: 705px) {
   .half-footer-details {
     z-index: 100;
@@ -1553,7 +1650,6 @@ section.ilet-2 > .ilet-con > h3 {
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 1fr;
-
     justify-content: center;
     align-content: center;
   }
@@ -1563,6 +1659,33 @@ section.ilet-2 > .ilet-con > h3 {
   .half-details-2 {
     text-align: center;
   }
+  .roof {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .roof-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+.foot a {
+ 
+  font-size: 14px;
+  padding: 7px 10px;
+  
+}
+
+
 }
 
 @media (max-width: 1080px) {
