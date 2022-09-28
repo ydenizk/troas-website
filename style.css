@@ -1603,7 +1603,6 @@ section.ilet-2 > .ilet-con > h3 {
 
   .roof-container {
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1720,5 +1719,108 @@ section.ilet-2 > .ilet-con > h3 {
     justify-content: center;
     align-items: center;
   }
+}
+
+@media  all and (max-width: 442px){
+
+.roof-container > h2,
+.roof-container > h2 > span,
+.roof-container > h2 > span i {
+  font-size: 14px;
+}
+
+.roof-container > h2 > span {
+  padding: 0 5px;
+  font-size: 14px;
+}
+.roof-container > h2 > span > i {
+  padding-right: 5px;
+  font-size: 14px;
+}
+.social-signs {
+  display: flex;
+  color: #ffff;
+  padding: 0 5px;
+}
+.roof .social-signs > a {
+
+  margin-left: 3px;
+}
+ 
+.referans-li{
+  display: none;
+}
+  .navbar .menu > li > a {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 0;
+  }
+  .slider-container > .tek-link {
+
+  width: 250px;
+  height: 40px;
+  right: 100px;
+  color: white;
+  border-radius: 10px 0 0 10px;
+  line-height: 40px;
+  font-size: 15px;
+
+}
+.slider-container > article > .img-desc {
+    right: 20px;
+    top: 380px;
+    text-align: right;
+  }
+
+  .slider-container > article > .img-desc > p {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+  .slider-container .btns-hover {
+
+  left: 37%;
+
+}
+  .bilgi-container > .bilgi-title {
+    font-size: 20px;
+  }
+  .bilgi-container > p {
+    max-width: 640px;
+
+    font-size: 14px;
+    padding: 0 40px;
+    letter-spacing: 0.4px;
+  }
+  .lift-article-5{
+    display: none;
+  }
+   .foot a {
+    font-size: 13px;
+    padding: 7px 3px;
+  }
+  .hakk-details > p {
+  width: 100%;
+
+  text-align: center;
+ 
+  font-size: 15px;
+ 
+  letter-spacing: 0.5px;
+  padding: 0 20px;
+
+}
+ .montaj-details > p {
+  text-align: center;
+    font-size: 15px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    padding: 0 120px;
+  }
+   .montaj-h {
+    font-size: 18px;
+    padding-left: 120px;
+  }
+
+
 }
 
