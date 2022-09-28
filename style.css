@@ -1318,9 +1318,28 @@ section.ilet-2 > .ilet-con > h3 {
 }
 
 /* ....... */
+@media all and (max-width: 1080px) {
+  .ilet-container {
+    width: 100%;
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    padding: 20px 100px;
+  }
+  .mapouter {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 
 /* media max 930px */
-@media (max-width: 960px) {
+@media all and (max-width: 960px) {
   .navbar {
     width: 100%;
     max-width: 960px;
@@ -1474,7 +1493,7 @@ section.ilet-2 > .ilet-con > h3 {
     margin: 10px 0;
   }
 }
-@media (max-width: 790px) {
+@media all and (max-width: 790px) {
   .navbar {
     display: flex;
     flex-direction: column;
@@ -1554,7 +1573,7 @@ section.ilet-2 > .ilet-con > h3 {
     padding-left: 30px;
   }
 }
-@media (max-width: 635px) {
+@media all and  (max-width: 635px) {
   .navbar .menu > li {
     margin: 0 3px;
   }
@@ -1575,7 +1594,6 @@ section.ilet-2 > .ilet-con > h3 {
     justify-content: center;
     align-items: center;
   }
-
  
   .drop-menu-2 {
     right: -90px;
@@ -1604,7 +1622,7 @@ section.ilet-2 > .ilet-con > h3 {
   }
 }
 
-@media (max-width: 500px) {
+@media  all and (max-width: 500px) {
   .input-container > label {
     padding-left: 30px;
   }
@@ -1704,22 +1722,4 @@ section.ilet-2 > .ilet-con > h3 {
   }
 }
 
-@media (max-width: 1080px) {
-  .ilet-container {
-    width: 100%;
-    max-width: 1080px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
-    padding: 20px 100px;
-  }
-  .mapouter {
-    margin: 0 auto;
-    padding: 0;
-  }
-}
+
